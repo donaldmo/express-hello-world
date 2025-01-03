@@ -1,16 +1,18 @@
 {
-  "name": "express-hello-world",
+  "name": "express-react-app",
   "version": "1.0.0",
-  "description": "Express Hello World on Render",
-  "main": "app.js",
-  "repository": "https://github.com/render-examples/express-hello-world",
-  "author": "Render Developers",
-  "license": "MIT",
-  "private": false,
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "NPM_CONFIG_PRODUCTION=false cd dashboard && npm install && npm run build"
   },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^5.0.0"
+    "express": "^4.21.2"
   }
 }
